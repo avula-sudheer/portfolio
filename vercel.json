@@ -1,0 +1,15 @@
+{
+  "version": 2,
+  "builds": [{ "src": "package.json", "use": "@vercel/next" }],
+  "routes": [
+    { "src": "/(.*)", "dest": "/" }
+  ],
+  "headers": [
+    {
+      "source": "/(.*).(js|css|png|jpg|webp|svg)",
+      "headers": [
+        { "key": "Cache-Control", "value": "public, max-age=31536000, immutable" }
+      ]
+    }
+  ]
+}
