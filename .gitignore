@@ -1,0 +1,44 @@
+.next/
+out/
+build/
+node_modules/
+
+# Logs
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+pnpm-debug.log*
+
+# Env files
+.env
+.env.local
+.env.*.local
+
+# Vercel
+.vercel/
+.vercel_build_output/
+
+# Mac
+.DS_Store
+
+# Editor directories
+.vscode/
+.idea/
+
+# Generated thumbnails (optional - remove if you want them committed)
+/public/images/generated/
+
+# TypeScript build info
+*.tsbuildinfo
+
+# Coverage
+coverage/
+
+# Cache
+.cache/
+node_modules
+.next
+/.env.local
+/.env
+dist
+resume.txt
