@@ -58,7 +58,7 @@ export default function Contact() {
             <label className="block mt-3">Message
               <textarea name="message" className="mt-1 w-full border rounded px-2 py-1" rows={4} />
             </label>
-            <div className="mt-3 text-sm text-slate-500">This form is a demo; to enable submissions set <code>NEXT_PUBLIC_FORMSPREE_ID</code> in your environment.</div>
+            {/* <div className="mt-3 text-sm text-slate-500">This form is a demo; to enable submissions set <code>NEXT_PUBLIC_FORMSPREE_ID</code> in your environment.</div> */}
             <button type="button" className="mt-4 px-4 py-2 bg-slate-900 text-white rounded">Send</button>
           </form>
         )}

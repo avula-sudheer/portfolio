@@ -46,7 +46,7 @@ export default function Home() {
           <SimpleTerminal command="Hello" outputLines={summaryLines} height={300} />
           <div className="mt-8">
             <h3 className="text-lg font-semibold text-center">Explore</h3>
-            <p className="text-center text-slate-600 mt-2">Quick links to important sections of the site.</p>
+            <p className="text-center text-slate-600 mt-2">Quick links to important sections for navigation.</p>
 
             <nav aria-label="Primary site navigation" className="mt-4">
               <ul className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-5 gap-4">
@@ -58,7 +58,7 @@ export default function Home() {
                   >
                     <div className="text-2xl">📁</div>
                     <div className="mt-2 font-medium">Projects</div>
-                    <div className="text-sm text-slate-500 dark:text-slate-400">Case studies & work highlights</div>
+                    <div className="text-sm text-slate-500 dark:text-slate-400">Projects, work highlights</div>
                   </Link>
                 </li>
 
@@ -70,7 +70,7 @@ export default function Home() {
                   >
                     <div className="text-2xl">🧰</div>
                     <div className="mt-2 font-medium">Tech Stack</div>
-                    <div className="text-sm text-slate-500 dark:text-slate-400">Tools, platforms & languages</div>
+                    <div className="text-sm text-slate-500 dark:text-slate-400">Technical skills, certifications</div>
                   </Link>
                 </li>
 
@@ -82,7 +82,7 @@ export default function Home() {
                   >
                     <div className="text-2xl">📄</div>
                     <div className="mt-2 font-medium">Resume</div>
-                    <div className="text-sm text-slate-500 dark:text-slate-400">Downloadable CV & structured resume</div>
+                    <div className="text-sm text-slate-500 dark:text-slate-400">Resume, CV</div>
                   </Link>
                 </li>
 
@@ -94,7 +94,7 @@ export default function Home() {
                   >
                     <div className="text-2xl">📝</div>
                     <div className="mt-2 font-medium">Let's Connect</div>
-                    <div className="text-sm text-slate-500 dark:text-slate-400">Articles, posts & MDX notes</div>
+                    <div className="text-sm text-slate-500 dark:text-slate-400">Communication, Contact</div>
                   </Link>
                 </li>
 
@@ -106,7 +106,7 @@ export default function Home() {
                   >
                     <div className="text-2xl">👤</div>
                     <div className="mt-2 font-medium">About</div>
-                    <div className="text-sm text-slate-500 dark:text-slate-400">Background, interests & contact</div>
+                    <div className="text-sm text-slate-500 dark:text-slate-400">Background, interests</div>
                   </Link>
                 </li>
               </ul>

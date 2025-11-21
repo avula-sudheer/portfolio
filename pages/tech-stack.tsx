@@ -36,8 +36,12 @@ export default function TechStack() {
           <div className="mt-1 text-slate-700">{resume.skills.security.join(', ')}</div>
         </div>
         <div>
-          <strong>DevSecOps:</strong>
-          <div className="mt-1 text-slate-700">{resume.skills.devsecops.join(', ')}</div>
+          <strong>BuildOps:</strong>
+          <div className="mt-1 text-slate-700">{resume.skills.devops.join(', ')}</div>
+        </div>
+        <div>
+          <strong>SecOps:</strong>
+          <div className="mt-1 text-slate-700">{resume.skills.secops.join(', ')}</div>
         </div>
         <div>
           <strong>Caching & Messaging:</strong>
