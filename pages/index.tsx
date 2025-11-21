@@ -14,18 +14,10 @@ function buildSummaryLines() {
   const skills: string[] = []
   const s = resume.skills
   if (s) {
-    Object.keys(s).forEach((key) => {
+    ;(Object.keys(s) as Array<keyof typeof s>).forEach((key) => {
       if (s[key] && s[key].length) skills.push(key)
     })
   }
-  // if (s) {
-  //   if (s.frontend && s.frontend.length) skills.push(s.frontend[0])
-  //   if (s.backend && s.backend.length) skills.push(s.backend[0])
-  //   if (s.cloud && s.cloud.length) skills.push(s.cloud[0])
-  //   if (s.dbms && s.dbms.length) skills.push(s.dbms[0])
-  //   if (s.devsecops && s.devsecops.length) skills.push(s.devsecops[0])
-  //   if (s.messaging && s.messaging.length) skills.push(s.messaging[0])
-  // }
   if (skills.length) lines.push(`Top skills: ${skills.join(', ')}`)
 
   if (resume.summary ) {
