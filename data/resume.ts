@@ -87,7 +87,7 @@ export const resume = {
       bullets: ['Built UI features and managed XML-based configuration tooling.'],
     },
   ],
-  certifications: ['Microsoft Certified: Azure Fundamentals (AZ-900)', 'Google Cloud Certified: Cloud Digital Leader'],
+  certifications: ['Microsoft Certified: Azure Fundamentals (AZ-900)', 'Google Cloud Certified: Cloud Digital Leader', 'Google Cloud Certified: Gen AI Leader'],
   education: { school: 'University of Madras', degree: 'B.E. in Computer Science', start: 'Oct 1999', end: 'Nov 2003' },
   awards: [
     {
