@@ -2,6 +2,7 @@ import Link from 'next/link'
 import Hero from '../components/Hero'
 import SimpleTerminal from '../components/SimpleTerminal'
 import resume from '../data/resume'
+import { Folder, Wrench, FileText, Mail, User } from 'lucide-react'
 
 function buildSummaryLines() {
   const lines: string[] = []
@@ -48,7 +49,7 @@ export default function Home() {
                     className="block p-4 bg-white dark:bg-slate-800 border rounded-lg hover:shadow-md transition-shadow"
                     aria-label="Projects"
                   >
-                    <div className="text-2xl">📁</div>
+                    <Folder className="w-8 h-8" />
                     <div className="mt-2 font-medium">Projects</div>
                     <div className="text-sm text-slate-500 dark:text-slate-400">Projects, work highlights</div>
                   </Link>
@@ -60,7 +61,7 @@ export default function Home() {
                     className="block p-4 bg-white dark:bg-slate-800 border rounded-lg hover:shadow-md transition-shadow"
                     aria-label="Tech Stack"
                   >
-                    <div className="text-2xl">🧰</div>
+                    <Wrench className="w-8 h-8" />
                     <div className="mt-2 font-medium">Tech Stack</div>
                     <div className="text-sm text-slate-500 dark:text-slate-400">Technical skills, certifications</div>
                   </Link>
@@ -72,7 +73,7 @@ export default function Home() {
                     className="block p-4 bg-white dark:bg-slate-800 border rounded-lg hover:shadow-md transition-shadow"
                     aria-label="Resume"
                   >
-                    <div className="text-2xl">📄</div>
+                    <FileText className="w-8 h-8" />
                     <div className="mt-2 font-medium">Resume</div>
                     <div className="text-sm text-slate-500 dark:text-slate-400">Resume, CV</div>
                   </Link>
@@ -84,7 +85,7 @@ export default function Home() {
                     className="block p-4 bg-white dark:bg-slate-800 border rounded-lg hover:shadow-md transition-shadow"
                     aria-label="Blog"
                   >
-                    <div className="text-2xl">📝</div>
+                    <Mail className="w-8 h-8" />
                     <div className="mt-2 font-medium">Let's Connect</div>
                     <div className="text-sm text-slate-500 dark:text-slate-400">Communication, Contact</div>
                   </Link>
@@ -96,7 +97,7 @@ export default function Home() {
                     className="block p-4 bg-white dark:bg-slate-800 border rounded-lg hover:shadow-md transition-shadow"
                     aria-label="About"
                   >
-                    <div className="text-2xl">👤</div>
+                    <User className="w-8 h-8" />
                     <div className="mt-2 font-medium">About</div>
                     <div className="text-sm text-slate-500 dark:text-slate-400">Background, interests</div>
                   </Link>

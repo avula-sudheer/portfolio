@@ -1,8 +1,11 @@
+import { Star } from 'lucide-react'
+
 export default function About() {
   return (
     <section>
       <div className="flex items-center gap-3">
-        <h2 className="text-2xl font-semibold">⭐ About Me</h2>
+        <Star className="w-6 h-6" />
+        <h2 className="text-2xl font-semibold">About Me</h2>
       </div>
 
       <div className="mt-6 space-y-6">
@@ -18,7 +21,7 @@ export default function About() {
             <li>Losing my baggage and passport on the day of my GRE exam taught me <strong>accountability</strong> in the most practical way.</li>
             <li>Being denied entry into a technical entrance exam due to low grades was disappointing, but it forced me to become <strong>self-motivated</strong> and <strong>confident</strong> in my own strengths.</li>
           </ul>
-          <p className="mt-2 text-slate-700">These challenges strengthened my discipline and shaped my ability to push forward — even when the path is unclear.</p>
+          <p className="mt-2 text-slate-700">These challenges strengthened my discipline and shaped my ability to push forward even when the path is unclear.</p>
         </div>
 
         <div>
@@ -59,18 +62,18 @@ export default function About() {
             <li>curiosity over authority,</li>
             <li>and consistency over heroics.</li>
           </ul>
-          <p className="mt-2 text-slate-700">I mentor engineers the same way I grew — with space to ask questions, explore, and develop <strong>confidence</strong>.</p>
+          <p className="mt-2 text-slate-700">I mentor engineers the same way I grew with space to ask questions, explore, and develop <strong>confidence</strong>.</p>
         </div>
 
         <div>
           <h3 className="mt-6 text-lg font-semibold">Personal Turning Point</h3>
-          <p className="mt-2 text-slate-700">A pivotal moment in my personal life was learning about the challenges my child may face. What initially crushed me eventually inspired a shift in <strong>purpose</strong> — motivating me to stay active, <strong>empathetic</strong>, and intentional about how I use my skills to make life easier for others.</p>
+          <p className="mt-2 text-slate-700">A pivotal moment in my personal life was learning about the challenges my child may face. What initially crushed me eventually inspired a shift in <strong>purpose</strong> motivating me to stay active, <strong>empathetic</strong>, and intentional about how I use my skills to make life easier for others.</p>
           <p className="mt-2 text-slate-700">This experience strengthened my desire to build technology that <strong>genuinely</strong> helps people facing difficulties, seen or unseen.</p>
         </div>
 
         <div>
           <h3 className="mt-6 text-lg font-semibold">A Life of Many Roles</h3>
-          <p className="mt-2 text-slate-700">Beyond engineering, I've grown through many roles — Son, Sibling, Spouse, Parent, Relative, Student, Friend, Mentor, Neighbor. Each role has taught me:</p>
+          <p className="mt-2 text-slate-700">Beyond engineering, I've grown through many roles: Son, Sibling, Spouse, Parent, Relative, Student, Friend, Mentor, Neighbor. Each role has taught me:</p>
           <ul className="mt-2 list-disc list-inside pl-4 text-slate-700">
             <li>patience</li>
             <li>humility</li>

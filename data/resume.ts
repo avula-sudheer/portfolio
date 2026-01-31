@@ -4,6 +4,7 @@ export const resume = {
   phone: '385-204-3339',
   email: 'sudheer.avula@gmail.com',
   linkedin: 'https://linkedin.com/in/sudheer-avula',
+  github: 'https://github.com/avula-sudheer',
   headline:
     'Staff Software Engineer',
   summary:
