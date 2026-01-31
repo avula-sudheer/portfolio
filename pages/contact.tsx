@@ -1,4 +1,5 @@
 import { useState } from 'react'
+import { Mail, Phone, Linkedin, MapPin } from 'lucide-react'
 import resume from '../data/resume'
 
 export default function Contact() {
@@ -10,32 +11,44 @@ export default function Contact() {
       <p className="mt-3 secondary-text max-w-2xl">I'd love to hear about your project or opportunities. Below are the best ways to reach me — pick whichever works for you.</p>
 
       <div className="mt-6 grid grid-cols-1 sm:grid-cols-2 gap-4">
-        <div className="p-4 border rounded-lg bg-white dark:bg-slate-800">
-          <h3 className="text-lg font-semibold">Email</h3>
+        <div className="p-4 border rounded-lg bg-white dark:bg-slate-800 flex flex-col">
+          <div className="flex items-center gap-3 mb-2">
+            <Mail className="w-5 h-5 text-slate-900 dark:text-slate-100" />
+            <h3 className="text-lg font-semibold">Email</h3>
+          </div>
           <p className="mt-2 secondary-text">Prefer email? Send a message directly.</p>
-          <a href={`mailto:${resume.email}`} className="mt-3 inline-block text-slate-900 dark:text-slate-100 font-medium">{resume.email}</a>
+          <a href={`mailto:${resume.email}`} className="mt-3 inline-block text-blue-600 dark:text-blue-400 font-medium hover:underline hover:text-blue-700 dark:hover:text-blue-300 transition-colors">{resume.email}</a>
         </div>
 
-        <div className="p-4 border rounded-lg bg-white dark:bg-slate-800">
-          <h3 className="text-lg font-semibold">Phone</h3>
+        <div className="p-4 border rounded-lg bg-white dark:bg-slate-800 flex flex-col">
+          <div className="flex items-center gap-3 mb-2">
+            <Phone className="w-5 h-5 text-slate-900 dark:text-slate-100" />
+            <h3 className="text-lg font-semibold">Phone</h3>
+          </div>
           <p className="mt-2 secondary-text">Call or text me during business hours.</p>
-          <a href={`tel:${resume.phone}`} className="mt-3 inline-block text-slate-900 dark:text-slate-100 font-medium">{resume.phone}</a>
+          <a href={`tel:${resume.phone}`} className="mt-3 inline-block text-blue-600 dark:text-blue-400 font-medium hover:underline hover:text-blue-700 dark:hover:text-blue-300 transition-colors">{resume.phone}</a>
         </div>
 
-        <div className="p-4 border rounded-lg bg-white dark:bg-slate-800">
-          <h3 className="text-lg font-semibold">LinkedIn</h3>
+        <div className="p-4 border rounded-lg bg-white dark:bg-slate-800 flex flex-col">
+          <div className="flex items-center gap-3 mb-2">
+            <Linkedin className="w-5 h-5 text-slate-900 dark:text-slate-100" />
+            <h3 className="text-lg font-semibold">LinkedIn</h3>
+          </div>
           <p className="mt-2 secondary-text">Connect with me on LinkedIn for updates and networking.</p>
-          <a href={resume.linkedin} target="_blank" rel="noreferrer" className="mt-3 inline-block text-slate-900 dark:text-slate-100 font-medium">{resume.linkedin}</a>
+          <a href={resume.linkedin} target="_blank" rel="noreferrer" className="mt-3 inline-block text-blue-600 dark:text-blue-400 font-medium hover:underline hover:text-blue-700 dark:hover:text-blue-300 transition-colors">{resume.linkedin}</a>
         </div>
 
-        <div className="p-4 border rounded-lg bg-white dark:bg-slate-800">
-          <h3 className="text-lg font-semibold">Location</h3>
+        <div className="p-4 border rounded-lg bg-white dark:bg-slate-800 flex flex-col">
+          <div className="flex items-center gap-3 mb-2">
+            <MapPin className="w-5 h-5 text-slate-900 dark:text-slate-100" />
+            <h3 className="text-lg font-semibold">Location</h3>
+          </div>
           <p className="mt-2 secondary-text">Based in:</p>
           <a
             href={`https://www.google.com/maps/search/?api=1&query=${encodeURIComponent(resume.location)}`}
             target="_blank"
             rel="noopener noreferrer"
-            className="mt-3 inline-block font-medium text-slate-900 dark:text-slate-100"
+            className="mt-3 inline-block font-medium text-blue-600 dark:text-blue-400 hover:underline hover:text-blue-700 dark:hover:text-blue-300 transition-colors"
           >
             {resume.location}
           </a>
