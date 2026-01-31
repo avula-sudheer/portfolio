@@ -87,7 +87,20 @@ export const resume = {
       bullets: ['Built UI features and managed XML-based configuration tooling.'],
     },
   ],
-  certifications: ['Microsoft Certified: Azure Fundamentals (AZ-900)', 'Google Cloud Certified: Cloud Digital Leader', 'Google Cloud Certified: Gen AI Leader'],
+  certifications: [
+    {
+      name: 'Microsoft Certified: Azure Fundamentals (AZ-900)',
+      credly: 'https://www.credly.com/badges/5ef701ef-8c74-470f-99ec-6d368bc22ae1',
+    },
+    {
+      name: 'Google Cloud Certified: Cloud Digital Leader',
+      credly: 'https://www.credly.com/badges/c7ef2770-3ee8-4a5b-a719-6721b943af77',
+    },
+    {
+      name: 'Google Cloud Certified: Gen AI Leader',
+      credly: 'https://www.credly.com/badges/56c833ce-9da3-4cff-bce1-285379131f4a',
+    },
+  ],
   education: { school: 'University of Madras', degree: 'B.E. in Computer Science', start: 'Oct 1999', end: 'Nov 2003' },
   awards: [
     {

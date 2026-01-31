@@ -55,8 +55,21 @@ export default function TechStack() {
 
       <h3 className="mt-6 text-lg font-semibold">Certifications</h3>
       <ul className="mt-2 list-disc list-inside secondary-text">
-        {resume.certifications.map((c) => (
-          <li key={c}>{c}</li>
+        {resume.certifications.map((cert) => (
+          <li key={cert.name}>
+            {cert.credly ? (
+              <a
+                href={cert.credly}
+                target="_blank"
+                rel="noopener noreferrer"
+                className="text-blue-600 dark:text-blue-400 hover:underline hover:text-blue-700 dark:hover:text-blue-300 transition-colors font-medium"
+              >
+                {cert.name}
+              </a>
+            ) : (
+              cert.name
+            )}
+          </li>
         ))}
       </ul>
     </section>
