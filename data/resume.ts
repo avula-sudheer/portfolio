@@ -10,7 +10,7 @@ export const resume = {
   summary:
     'Driving cloud-native modernization and secure, scalable enterprise platforms. Skilled in building distributed systems and high-performance applications using backend, frontend, and Kubernetes-based technologies. Proven in technical leadership, mentoring, and delivering measurable platform and business improvements.',
   skills: {
-    frontend: ['Angular', 'TypeScript', 'HTML', 'CSS', 'JSP'],
+    frontend: ['Angular', 'React', 'TypeScript', 'HTML', 'CSS', 'JSP'],
     backend: ['Java', 'Spring Boot', 'Quarkus', 'REST', 'GraphQL', 'Python', 'C#', 'Node.js'],
     cloud: ['AWS', 'Azure', 'GCP', 'Docker', 'Kubernetes', 'Helm', 'Serverless', 'Microservices'],
     dbms: ['Oracle', 'MS SQL', 'Sybase', 'PostgreSQL', 'MySQL', 'MongoDB'],
