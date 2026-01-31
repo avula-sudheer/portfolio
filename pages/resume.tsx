@@ -34,8 +34,8 @@ export default function Resume() {
       <div className="flex items-start justify-between">
         <div>
           <h1 className="text-3xl font-bold">{resume.name}</h1>
-          <div className="mt-1 text-slate-600">{resume.headline}</div>
-          <div className="mt-2 text-sm text-slate-600">{resume.location} · {resume.phone} · <a href={`mailto:${resume.email}`} className="underline">{resume.email}</a></div>
+          <div className="mt-1 secondary-text">{resume.headline}</div>
+          <div className="mt-2 text-sm secondary-text">{resume.location} · {resume.phone} · <a href={`mailto:${resume.email}`} className="underline">{resume.email}</a></div>
         </div>
         <div className="text-sm">
           <a
@@ -58,11 +58,11 @@ export default function Resume() {
             <div className="flex items-baseline justify-between">
               <div>
                 <div className="font-semibold">{exp.role} — {exp.company}</div>
-                <div className="text-sm text-slate-600">{exp.location}</div>
+                <div className="text-sm secondary-text">{exp.location}</div>
               </div>
-              <div className="text-sm text-slate-600">{exp.start} — {exp.end}</div>
+              <div className="text-sm secondary-text">{exp.start} — {exp.end}</div>
             </div>
-            <ul className="mt-2 list-disc list-inside text-slate-700">
+            <ul className="mt-2 list-disc list-inside secondary-text">
               {exp.bullets.map((b) => (
                 <li key={b}>{b}</li>
               ))}
@@ -72,13 +72,13 @@ export default function Resume() {
       </div>
 
       <h2 className="mt-8 text-2xl font-semibold">Education</h2>
-      <div className="mt-2 text-slate-700">
+      <div className="mt-2 secondary-text">
         <div className="font-semibold">{resume.education.school}</div>
         <div className="text-sm">{resume.education.degree} · {resume.education.start} — {resume.education.end}</div>
       </div>
 
       <h2 className="mt-8 text-2xl font-semibold">Awards & Recognitions</h2>
-      <div className="mt-2 space-y-3 text-slate-700">
+      <div className="mt-2 space-y-3 secondary-text">
         {resume.awards.map((a) => (
           <div key={a.title}>
             <div className="font-semibold">{a.title}</div>

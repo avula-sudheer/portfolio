@@ -7,30 +7,30 @@ export default function Contact() {
   return (
     <section>
       <h2 className="text-3xl font-extrabold">Get in touch</h2>
-      <p className="mt-3 text-slate-700 max-w-2xl">I'd love to hear about your project or opportunities. Below are the best ways to reach me — pick whichever works for you.</p>
+      <p className="mt-3 secondary-text max-w-2xl">I'd love to hear about your project or opportunities. Below are the best ways to reach me — pick whichever works for you.</p>
 
       <div className="mt-6 grid grid-cols-1 sm:grid-cols-2 gap-4">
         <div className="p-4 border rounded-lg bg-white dark:bg-slate-800">
           <h3 className="text-lg font-semibold">Email</h3>
-          <p className="mt-2 text-slate-700 dark:text-slate-300">Prefer email? Send a message directly.</p>
+          <p className="mt-2 secondary-text">Prefer email? Send a message directly.</p>
           <a href={`mailto:${resume.email}`} className="mt-3 inline-block text-slate-900 dark:text-slate-100 font-medium">{resume.email}</a>
         </div>
 
         <div className="p-4 border rounded-lg bg-white dark:bg-slate-800">
           <h3 className="text-lg font-semibold">Phone</h3>
-          <p className="mt-2 text-slate-700 dark:text-slate-300">Call or text me during business hours.</p>
+          <p className="mt-2 secondary-text">Call or text me during business hours.</p>
           <a href={`tel:${resume.phone}`} className="mt-3 inline-block text-slate-900 dark:text-slate-100 font-medium">{resume.phone}</a>
         </div>
 
         <div className="p-4 border rounded-lg bg-white dark:bg-slate-800">
           <h3 className="text-lg font-semibold">LinkedIn</h3>
-          <p className="mt-2 text-slate-700 dark:text-slate-300">Connect with me on LinkedIn for updates and networking.</p>
+          <p className="mt-2 secondary-text">Connect with me on LinkedIn for updates and networking.</p>
           <a href={resume.linkedin} target="_blank" rel="noreferrer" className="mt-3 inline-block text-slate-900 dark:text-slate-100 font-medium">{resume.linkedin}</a>
         </div>
 
         <div className="p-4 border rounded-lg bg-white dark:bg-slate-800">
           <h3 className="text-lg font-semibold">Location</h3>
-          <p className="mt-2 text-slate-700 dark:text-slate-300">Based in:</p>
+          <p className="mt-2 secondary-text">Based in:</p>
           <a
             href={`https://www.google.com/maps/search/?api=1&query=${encodeURIComponent(resume.location)}`}
             target="_blank"

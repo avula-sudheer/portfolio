@@ -15,20 +15,20 @@ export default function ProjectCase({ project }: { project: any }) {
         <div>
           <h1 className="text-2xl font-bold">{project.title}</h1>
           
-          <div className="mt-2 text-slate-700">{project.description}</div>
+          <div className="mt-2 secondary-text">{project.description}</div>
 
           {project.role && (
             
             <div className="mt-6">
               <h2 className="text-lg font-semibold">Role</h2>
-              <div className="mt-1 text-slate-700">{project.role}</div>
+              <div className="mt-1 secondary-text">{project.role}</div>
             </div>
           )}
           
           {project.responsibilities && project.responsibilities.length > 0 && (
             <div className="mt-6">
               <h2 className="text-lg font-semibold">Responsibilities</h2>
-              <ul className="mt-2 list-disc list-inside text-slate-700">
+              <ul className="mt-2 list-disc list-inside secondary-text">
                 {project.responsibilities.map((r: string, i: number) => (
                   <li key={i}>{r}</li>
                 ))}

@@ -13,9 +13,14 @@ body {
 /* provide a sensible dark-mode fallback using Tailwind utilities */
 html.dark body,
 body.dark {
-  @apply bg-slate-900 text-slate-100;
+  @apply bg-slate-900 text-white;
 }
 
 .container {
   @apply max-w-4xl mx-auto px-4;
+}
+
+/* Secondary text color that works in both light and dark modes */
+.secondary-text {
+  @apply text-slate-700 dark:text-slate-300;
 }
