@@ -1,21 +1,20 @@
 export const resume = {
   name: 'Sudheer Avula',
   location: 'Provo, Utah',
-  phone: '385-204-3339',
   email: 'sudheer.avula@gmail.com',
   linkedin: 'https://linkedin.com/in/sudheer-avula',
   github: 'https://github.com/avula-sudheer',
   headline:
-    'Staff Software Engineer',
+    'Lead Software Engineer',
   summary:
-    'Driving cloud-native modernization and secure, scalable enterprise platforms. Skilled in building distributed systems and high-performance applications using backend, frontend, and Kubernetes-based technologies. Proven in technical leadership, mentoring, and delivering measurable platform and business improvements.',
+    'Engineering leader focused on enterprise data security, encryption, tokenization, and secure cloud integrations. Experience designing distributed systems, modernizing cloud-native platforms, and mentoring engineers.',
   skills: {
     frontend: ['Angular', 'React', 'TypeScript', 'HTML', 'CSS', 'JSP'],
     backend: ['Java', 'Spring Boot', 'Quarkus', 'REST', 'GraphQL', 'Python', 'C#', 'Node.js'],
     cloud: ['AWS', 'Azure', 'GCP', 'Docker', 'Kubernetes', 'Helm', 'Serverless', 'Microservices'],
-    dbms: ['Oracle', 'MS SQL', 'Sybase', 'PostgreSQL', 'MySQL', 'MongoDB'],
+    dbms: ['Oracle', 'Microsoft SQL Server', 'Sybase', 'PostgreSQL', 'MySQL', 'MongoDB'],
     warehouse: ['Amazon Redshift', 'Google BigQuery', 'Snowflake', 'Databricks'],
-    security: ['Encryption', 'Tokenization', 'FPE', 'Masking'],
+    security: ['Encryption', 'Tokenization', 'Format-preserving encryption (FPE)', 'Masking'],
     scripting: ['Bash', 'PowerShell', 'Ruby'],
     devops: ['Ant', 'Maven', 'Gradle', 'Make', 'npm', 'Webpack', 'pip', 'MSBuild'],
     secops: ['GitLab CI/CD', 'Jenkins', 'OWASP', 'SAST', 'Container Security'],

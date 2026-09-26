@@ -8,7 +8,6 @@ const personLD = (r: typeof resume) => ({
   name: r.name,
   email: `mailto:${r.email}`,
   jobTitle: r.headline,
-  telephone: r.phone,
   url: r.linkedin,
   address: {
     "@type": "PostalAddress",
@@ -31,16 +30,16 @@ export default function Resume() {
         <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(personLD(resume)) }} />
       </Head>
     <section>
-      <div className="flex items-start justify-between">
+      <div className="flex flex-col gap-5 sm:flex-row sm:items-start sm:justify-between">
         <div>
-          <h1 className="text-3xl font-bold">{resume.name}</h1>
+          <h1 className="text-3xl font-semibold">{resume.name}</h1>
           <div className="mt-1 secondary-text">{resume.headline}</div>
-          <div className="mt-2 text-sm secondary-text">{resume.location} · {resume.phone} · <a href={`mailto:${resume.email}`} className="underline">{resume.email}</a></div>
+          <div className="mt-2 text-sm secondary-text break-words">{resume.location} · <a href={`mailto:${resume.email}`} className="underline">{resume.email}</a></div>
         </div>
         <div className="text-sm">
           <a
             href="/Sudheer-Avula.pdf"
-            className="px-3 py-2 border rounded"
+            className="button-secondary"
             download
           >
             Download PDF
@@ -55,7 +54,7 @@ export default function Resume() {
       <div className="mt-4 space-y-6">
         {resume.experience.map((exp) => (
           <div key={exp.company}>
-            <div className="flex items-baseline justify-between">
+            <div className="flex flex-col gap-1 sm:flex-row sm:items-baseline sm:justify-between">
               <div>
                 <div className="font-semibold">{exp.role} — {exp.company}</div>
                 <div className="text-sm secondary-text">{exp.location}</div>

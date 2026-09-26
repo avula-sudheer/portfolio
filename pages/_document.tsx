@@ -10,7 +10,7 @@ class MyDocument extends Document {
     const script = `(function(){try{var theme=localStorage.getItem('theme');if(!theme){var m=window.matchMedia && window.matchMedia('(prefers-color-scheme: dark)');theme=m && m.matches ? 'dark' : 'light'}if(theme==='dark'){document.documentElement.classList.add('dark')} }catch(e){} })()`
 
     return (
-      <Html>
+      <Html lang="en">
         <Head />
         <body>
           {/* Inject theme script to avoid flash and ensure initial theme applies */}

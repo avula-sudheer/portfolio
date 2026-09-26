@@ -1,97 +1,33 @@
-import { Star } from 'lucide-react'
+import resume from '../data/resume'
 
 export default function About() {
   return (
-    <section>
-      <div className="flex items-center gap-3">
-        <Star className="w-6 h-6" />
-        <h2 className="text-2xl font-semibold">About Me</h2>
-      </div>
+    <section className="max-w-3xl">
+      <h1 className="text-3xl sm:text-4xl font-semibold tracking-tight">About Sudheer Avula</h1>
+      <p className="mt-3 text-lg secondary-text">{resume.headline} · {resume.location}</p>
+      <p className="mt-5 secondary-text leading-relaxed">{resume.summary}</p>
 
-      <div className="mt-6 space-y-6">
-        <div>
-          <h3 className="mt-6 text-lg font-semibold">Early Foundations</h3>
-          <p className="mt-2 secondary-text">Growing up as the eldest child taught me <strong>responsibility</strong>, <strong>resilience</strong>, and <strong>independence</strong> very early. I learned to be <strong>exploratory</strong>, take initiative, and maintain a sense of ownership in everything I do. Those early roles shaped the foundation of how I approach challenges today.</p>
-        </div>
+      <section className="mt-10" aria-labelledby="background-heading">
+        <h2 id="background-heading" className="text-2xl font-semibold">Engineering background</h2>
+        <p className="mt-4 secondary-text leading-relaxed">My experience spans enterprise applications, endpoint management, data protection, and cloud platforms. My recent work includes Java service modernization, Kubernetes deployments, encryption workflows, secure cloud integrations, and tokenization services.</p>
+        <p className="mt-4 secondary-text leading-relaxed">Earlier in my career, I worked on software distribution, endpoint agent updates, enterprise portals, and business systems. That progression shaped my focus on reliable distributed systems and practical engineering decisions.</p>
+      </section>
 
-        <div>
-          <h3 className="mt-6 text-lg font-semibold">Defining Moments</h3>
-          <p className="mt-2 secondary-text">A few key experiences had an outsized impact on my mindset:</p>
-          <ul className="mt-2 list-disc list-inside pl-4 secondary-text">
-            <li>Losing my baggage and passport on the day of my GRE exam taught me <strong>accountability</strong> in the most practical way.</li>
-            <li>Being denied entry into a technical entrance exam due to low grades was disappointing, but it forced me to become <strong>self-motivated</strong> and <strong>confident</strong> in my own strengths.</li>
-          </ul>
-          <p className="mt-2 secondary-text">These challenges strengthened my discipline and shaped my ability to push forward even when the path is unclear.</p>
-        </div>
+      <section className="mt-10" aria-labelledby="leadership-heading">
+        <h2 id="leadership-heading" className="text-2xl font-semibold">Technical leadership</h2>
+        <p className="mt-4 secondary-text leading-relaxed">I lead through architecture reviews, performance tuning, threat modeling, and mentoring. I value clear technical direction, curiosity, and giving engineers room to ask questions, explore solutions, and build confidence.</p>
+      </section>
 
-        <div>
-          <h3 className="mt-6 text-lg font-semibold">Curiosity That Became a Career</h3>
-          <p className="mt-2 secondary-text">My love for engineering started with a love for <strong>logic</strong>. Math fascinated me, and the rush of <strong>solving problems</strong> naturally evolved into exploring computer science. Around the same time, the global buzz around the Y2K problem highlighted the real-world impact engineers could make. That convergence set me firmly on the path toward <strong>Computer Science Engineering</strong>.</p>
-        </div>
+      <section className="mt-10 border-t border-slate-200 dark:border-slate-700 pt-8" aria-labelledby="values-heading">
+        <h2 id="values-heading" className="text-2xl font-semibold">Personal values</h2>
+        <p className="mt-4 secondary-text leading-relaxed">My interest in engineering began with a love of math and problem solving. As a parent and mentor, patience, empathy, and responsibility shape how I collaborate and support other people’s growth.</p>
+      </section>
 
-        <div>
-          <h3 className="mt-6 text-lg font-semibold">Growth Through Exploration</h3>
-          <p className="mt-2 secondary-text">I started my career as an intern who asked more questions than most people had patience for. But that <strong>curiosity</strong> became my accelerant.</p>
-          <p className="mt-2 secondary-text">Along the way, I learned:</p>
-          <ul className="mt-2 list-disc list-inside pl-4 secondary-text">
-            <li>to dig deep using the 80–20 rule,</li>
-            <li>to embrace mistakes as learning tools,</li>
-            <li>and to constantly refine not just solutions, but the way I thought about problems.</li>
-          </ul>
-          <p className="mt-2 secondary-text">These habits later became central to my engineering leadership style.</p>
-        </div>
-
-        <div>
-          <h3 className="mt-6 text-lg font-semibold">From Building Features to Designing Systems</h3>
-          <p className="mt-2 secondary-text">Over the years, my work evolved from writing code to architecting <strong>large-scale</strong>, secure, <strong>high-performance</strong> platforms. I've worked across:</p>
-          <ul className="mt-2 list-disc list-inside pl-4 secondary-text">
-            <li>distributed systems</li>
-            <li>endpoint security</li>
-            <li>data protection & tokenization</li>
-            <li>cloud platforms</li>
-            <li>enterprise UI/UX and human-factor driven design</li>
-          </ul>
-          <p className="mt-2 secondary-text">My focus expanded from fixing problems to <strong>creating systems</strong> that prevent them.</p>
-        </div>
-
-        <div>
-          <h3 className="mt-6 text-lg font-semibold">Leadership Through Clarity and Empathy</h3>
-          <p className="mt-2 secondary-text">As I began leading teams, I realized that the strongest form of <strong>leadership</strong> is enabling others. I lead with:</p>
-          <ul className="mt-2 list-disc list-inside pl-4 secondary-text">
-            <li>clarity over pressure,</li>
-            <li>curiosity over authority,</li>
-            <li>and consistency over heroics.</li>
-          </ul>
-          <p className="mt-2 secondary-text">I mentor engineers the same way I grew with space to ask questions, explore, and develop <strong>confidence</strong>.</p>
-        </div>
-
-        <div>
-          <h3 className="mt-6 text-lg font-semibold">Personal Turning Point</h3>
-          <p className="mt-2 secondary-text">A pivotal moment in my personal life was learning about the challenges my child may face. What initially crushed me eventually inspired a shift in <strong>purpose</strong> motivating me to stay active, <strong>empathetic</strong>, and intentional about how I use my skills to make life easier for others.</p>
-          <p className="mt-2 secondary-text">This experience strengthened my desire to build technology that <strong>genuinely</strong> helps people facing difficulties, seen or unseen.</p>
-        </div>
-
-        <div>
-          <h3 className="mt-6 text-lg font-semibold">A Life of Many Roles</h3>
-          <p className="mt-2 secondary-text">Beyond engineering, I've grown through many roles: Son, Sibling, Spouse, Parent, Relative, Student, Friend, Mentor, Neighbor. Each role has taught me:</p>
-          <ul className="mt-2 list-disc list-inside pl-4 secondary-text">
-            <li>patience</li>
-            <li>humility</li>
-            <li>emotional intelligence</li>
-            <li>gratitude</li>
-          </ul>
-          <p className="mt-2 secondary-text">These values guide how I collaborate, solve problems, and lead teams.</p>
-        </div>
-
-        <div>
-          <h3 className="mt-6 text-lg font-semibold">What Drives Me Today</h3>
-          <p className="mt-2 secondary-text">I'm driven by a simple principle: build systems, solutions, and teams that truly make an impact. Whether it's improving security, shaping reliable distributed systems, guiding engineers, or designing thoughtful user experiences — I care about work that improves <strong>people's lives</strong>.</p>
-        </div>
-      </div>
-
-      <div className="mt-6">
-        <a href="/contact" className="px-4 py-2 bg-slate-900 text-white rounded">Get in touch</a>
-      </div>
+      <section className="mt-10 border-t border-slate-200 dark:border-slate-700 pt-8" aria-labelledby="personal-heading">
+        <h2 id="personal-heading" className="text-2xl font-semibold">A little more about me</h2>
+        <p className="mt-4 secondary-text leading-relaxed">Growing up as the eldest child taught me responsibility, resilience, and independence. Early setbacks—including losing my baggage and passport on the day of my GRE exam and being denied entry to a technical entrance exam—strengthened my accountability and self-motivation.</p>
+        <p className="mt-4 secondary-text leading-relaxed">Those experiences, along with my curiosity about math, logic, and the real-world impact of engineering, led me toward computer science. Today, the roles I hold as a parent, mentor, and engineer continue to shape how I work with patience, empathy, and purpose.</p>
+      </section>
     </section>
   )
 }

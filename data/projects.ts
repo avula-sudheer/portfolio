@@ -1,11 +1,10 @@
-import { title } from "process"
-
 export const projects = [
   {
     title: 'Data Privacy & Protection',
     slug: 'data-privacy-protection',
+    contribution: 'I modernized Java services with Quarkus, designed Kubernetes deployments, and introduced secure delivery pipelines.',
     description: 'Data Privacy & Protection helps to reduce risk, enable compliance, and secure data at scale. With quantum-ready, format-preserving protection, stateless key management, and deep integrations across cloud and hybrid IT, you can protect sensitive data without breaking workflows or analytics.',
-    tech: ['Java', 'Sprint Boot', 'Quarkus', 'Angular', 'Python', 'Kubernetes', 'Helm', 'GitLab CI/CD', 'SAST', 'IaC', 'OWASP', 'Container Security'],
+    tech: ['Java', 'Spring Boot', 'Quarkus', 'Angular', 'Python', 'Kubernetes', 'Helm', 'GitLab CI/CD', 'SAST', 'IaC', 'OWASP', 'Container Security'],
     image: '/images/dpp.svg',
     link: 'https://www.opentext.com/products/data-privacy-protection-foundation',
     role: 'Lead Software Engineer',
@@ -20,7 +19,8 @@ export const projects = [
   {
     title: 'Voltage SecureData Integrations',
     slug: 'voltage-securedata-integrations',
-    description: 'Voltage SecureData Integration provides data-centric security solutions that protect sensitive information across various platforms and data warehouses. By leveraging advanced encryption, tokenization, and key management techniques, it ensures data privacy and compliance with regulatory requirements while maintaining data usability for analytics and operations.',
+    contribution: 'I designed encryption workflows and built encryption and tokenization services for cloud data platforms.',
+    description: 'Voltage SecureData Integrations provide data-centric security solutions that protect sensitive information across various platforms and data warehouses. By leveraging advanced encryption, tokenization, and key management techniques, it ensures data privacy and compliance with regulatory requirements while maintaining data usability for analytics and operations.',
     tech: ['Java', 'Redshift', 'Snowflake', 'BigQuery', 'Databricks', 'AWS', 'Azure', 'GCP', 'Serverless', 'API Gateway', 'IAM', 'Bash', 'Python', 'Terraform', 'OWASP'],
     image: '/images/vsd.svg',
     link: 'https://www.opentext.com/products/data-privacy-protection-foundation#integration',
@@ -31,7 +31,7 @@ export const projects = [
       // 'Automated Jenkins pipelines with static analysis and container scanning, increasing release reliability by 30%.',
       // 'Led architecture reviews, performance tuning, and threat modeling initiatives to improve system stability.',
       
-      'Cross-Platform Security Architecture: Designed and implemented complex encryption workflows and SecureData Integrations across heterogeneous environments ',
+      'Cross-Platform Security Architecture: Designed and implemented complex encryption workflows and SecureData Integrations across heterogeneous environments.',
       'Data Warehouses: Snowflake, Google BigQuery, Amazon Redshift, and Databricks.',
       'Streaming & ETL: Kafka, AWS Glue.',
       'Serverless Compute: AWS Lambda, Azure Functions, Google Cloud Functions.',
@@ -42,8 +42,9 @@ export const projects = [
   {
     title: 'ZENworks',
     slug: 'zenworks',
+    contribution: 'I built software distribution workflows and modernized endpoint agent updates for enterprise device management.',
     description: 'ZENworks is a comprehensive suite of endpoint management solutions that streamline IT operations and enhance security across diverse device environments. It offers robust features for software distribution, patch management, asset tracking, and remote control, enabling organizations to efficiently manage and secure their endpoints while ensuring compliance with corporate policies.',
-    tech: ['Java', 'JSP', 'Web Services','Javascript', 'C#', 'Sybase', 'Oracle', 'MS SQL', 'Tomcat'],
+    tech: ['Java', 'JSP', 'Web Services','JavaScript', 'C#', 'Sybase', 'Oracle', 'Microsoft SQL Server', 'Tomcat'],
     image: '/images/zenworks.png',
     link: 'https://www.opentext.com/products/zenworks-suite',
     role: 'Software Consultant',
@@ -55,9 +56,10 @@ export const projects = [
     ],
   },
   {
-    title: 'Dealer Jobber portal',
+    title: 'Dealer Jobber Portal',
     slug: 'dealer-jobber-portal',
-    description: 'The Dealer Jobber portal is a comprehensive platform designed to streamline operations and communications between dealers and jobbers. It offers features such as order management, role-based access, bulk-order workflows, notifications, and reconciliation APIs, all aimed at enhancing efficiency and collaboration within the supply chain.',
+    contribution: 'I developed portal features with JSP and Servlets, automated business processes, and implemented role-based access.',
+    description: 'The Dealer Jobber Portal is a comprehensive platform designed to streamline operations and communications between dealers and jobbers. It offers features such as order management, role-based access, bulk-order workflows, notifications, and reconciliation APIs, all aimed at enhancing efficiency and collaboration within the supply chain.',
     tech: ['Java', 'Servlets', 'JSP', 'Oracle', 'iPlanet'],
     image: '/images/bp-dj-portal.png',
     link: 'https://www.bp.com',
@@ -71,6 +73,7 @@ export const projects = [
   {
     title: 'NTPC - Financial Forecasting Model',
     slug: 'ntpc-financial-forecasting-model',
+    contribution: 'I built reporting interfaces and stored procedures to automate financial calculations and scenario analysis.',
     description: 'Developed an internal automation system to support Corporate Finance Strategies for National Thermal Power Corporation (NTPC), enabling robust scenario planning and high-level analytical reporting for future expansion initiatives.',
     tech: ['Java', 'Struts', 'Data Analysis', 'Stored Procedures', 'Oracle'],
     image: '/images/ntpc-ffm.png',
@@ -78,20 +81,21 @@ export const projects = [
     role: 'Software Engineer',
     responsibilities: [
       'Data Visualization & Reporting: Developed user interfaces and backend logic for generating high-level financial dashboards, providing strategic insights into future expansion plan viability.',
-      'Modeling Automation: Wrote database store procedures and implemented modules to automate complex financial calculations, specifically for Sensitivity Analysis and Scenario Analysis.',
+      'Modeling Automation: Wrote database stored procedures and implemented modules to automate complex financial calculations, specifically for Sensitivity Analysis and Scenario Analysis.',
       'System Integration: Integrated the analytical system with core financial data sources to ensure accuracy and real-time refresh of metrics used for strategy formulation.',
     ],
   },
   {
     title: 'MWSC - Utility Billing System',
     slug: 'mwsc-utility-billing-system',
+    contribution: 'I implemented billing logic and APIs for Oracle integrations, and contributed to the automated meter-reading data layer.',
     description: 'To modernize the utility billing infrastructure for Maldives Water and Sewerage Company (MWSC) by implementing "Equip," a third-party billing engine. The goal was to automate revenue cycles and establish seamless data synchronization between the new billing tool, the existing Oracle ERP ecosystem, and field hardware.',
-    tech: ['Java', 'HTML', 'Javascript', 'MongoDB'],
+    tech: ['Java', 'HTML', 'JavaScript', 'MongoDB'],
     image: '/images/mwsc.png',
     link: 'https://www.mwsc.com.mv',
     role: 'Software Engineer',
     responsibilities: [
-      'Billing Logic Implementation: Implemented core utility billing logic and specific rate configurations within the \'Equip\' system using Java, and SQL.',
+      'Billing Logic Implementation: Implemented core utility billing logic and specific rate configurations within the \'Equip\' system using Java and SQL.',
       'API Development: Developed API interfaces to facilitate bi-directional data exchange with Oracle Accounts Receivable (AR) (for financial posting) and CRM (for customer management).',
       'AMR Data Layer: Contributed to the development of the data communication layer responsible for ingesting and validating usage data from AMR (Automated Meter Reading) devices.',
     ],

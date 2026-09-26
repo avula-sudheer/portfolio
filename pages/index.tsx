@@ -1,112 +1,38 @@
 import Link from 'next/link'
 import Hero from '../components/Hero'
-import SimpleTerminal from '../components/SimpleTerminal'
-import resume from '../data/resume'
-import { Folder, Wrench, FileText, Mail, User } from 'lucide-react'
 
-function buildSummaryLines() {
-  const lines: string[] = []
-  lines.push(`Welcome to, ${resume.name}'s portal!`)
-  if (resume.headline) lines.push(`Role: ${resume.headline}`)
-  if (resume.location) lines.push(`Location: ${resume.location}`)
-  if (resume.email) lines.push(`Contact: ${resume.email}`)
-
-  // pick representative skills
-  const skills: string[] = []
-  const s = resume.skills
-  if (s) {
-    ;(Object.keys(s) as Array<keyof typeof s>).forEach((key) => {
-      if (s[key] && s[key].length) skills.push(key)
-    })
-  }
-  if (skills.length) lines.push(`Top skills: ${skills.join(', ')}`)
-
-  if (resume.summary ) {
-    lines.push(`Summary: ${resume.summary}`)
-  }
-
-  return lines
-}
+const destinations = [
+  { href: '/projects', label: 'Projects', description: 'Selected engineering work and responsibilities.' },
+  { href: '/tech-stack', label: 'Expertise', description: 'Technologies, security domains, and certifications.' },
+  { href: '/background', label: 'Personal Story', description: 'Personal background, values, and leadership approach.' },
+]
 
 export default function Home() {
-  const summaryLines = buildSummaryLines()
-
   return (
-    <>
-      {/* <Hero /> */}
-      <section className="container mt-8">
-        <div className="max-w-3xl mx-auto">
-          <SimpleTerminal command="Hello" outputLines={summaryLines} height={300} />
-          <div className="mt-8">
-            <h3 className="text-lg font-semibold text-center">Explore</h3>
-            <p className="text-center text-slate-600 mt-2">Quick links to important sections for navigation.</p>
-
-            <nav aria-label="Primary site navigation" className="mt-4">
-              <ul className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-5 gap-4">
-                <li>
-                  <Link
-                    href="/projects"
-                    className="block p-4 bg-white dark:bg-slate-800 border rounded-lg hover:shadow-md transition-shadow"
-                    aria-label="Projects"
-                  >
-                    <Folder className="w-8 h-8" />
-                    <div className="mt-2 font-medium">Projects</div>
-                    <div className="text-sm text-slate-500 dark:text-slate-400">Projects, work highlights</div>
-                  </Link>
-                </li>
-
-                <li>
-                  <Link
-                    href="/tech-stack"
-                    className="block p-4 bg-white dark:bg-slate-800 border rounded-lg hover:shadow-md transition-shadow"
-                    aria-label="Tech Stack"
-                  >
-                    <Wrench className="w-8 h-8" />
-                    <div className="mt-2 font-medium">Tech Stack</div>
-                    <div className="text-sm text-slate-500 dark:text-slate-400">Technical skills, certifications</div>
-                  </Link>
-                </li>
-
-                <li>
-                  <Link
-                    href="/resume"
-                    className="block p-4 bg-white dark:bg-slate-800 border rounded-lg hover:shadow-md transition-shadow"
-                    aria-label="Resume"
-                  >
-                    <FileText className="w-8 h-8" />
-                    <div className="mt-2 font-medium">Resume</div>
-                    <div className="text-sm text-slate-500 dark:text-slate-400">Resume, CV</div>
-                  </Link>
-                </li>
-
-                <li>
-                  <Link
-                    href="/contact"
-                    className="block p-4 bg-white dark:bg-slate-800 border rounded-lg hover:shadow-md transition-shadow"
-                    aria-label="Blog"
-                  >
-                    <Mail className="w-8 h-8" />
-                    <div className="mt-2 font-medium">Let's Connect</div>
-                    <div className="text-sm text-slate-500 dark:text-slate-400">Communication, Contact</div>
-                  </Link>
-                </li>
-
-                <li>
-                  <Link
-                    href="/about"
-                    className="block p-4 bg-white dark:bg-slate-800 border rounded-lg hover:shadow-md transition-shadow"
-                    aria-label="About"
-                  >
-                    <User className="w-8 h-8" />
-                    <div className="mt-2 font-medium">About</div>
-                    <div className="text-sm text-slate-500 dark:text-slate-400">Background, interests</div>
-                  </Link>
-                </li>
-              </ul>
-            </nav>
-          </div>
+    <div className="max-w-6xl mx-auto">
+      <Hero />
+      <section className="border-t border-slate-200 dark:border-slate-700 py-5 sm:py-6" aria-labelledby="focus-heading">
+        <h2 id="focus-heading" className="text-sm uppercase tracking-widest font-semibold">What I work on</h2>
+        <p className="mt-3 max-w-3xl text-lg sm:text-xl leading-relaxed">Enterprise data security, secure cloud integrations, and distributed systems.</p>
+      </section>
+      <section className="border-t border-slate-200 dark:border-slate-700 py-5 sm:py-6" aria-labelledby="explore-heading">
+        <h2 id="explore-heading" className="text-sm uppercase tracking-widest font-semibold">Explore</h2>
+        <div className="mt-4 grid gap-3 sm:grid-cols-3">
+          {destinations.map((destination) => (
+            <Link key={destination.href} href={destination.href} className="group rounded-lg border border-slate-200 dark:border-slate-700 p-4 hover:border-teal-600 dark:hover:border-teal-300 transition-colors">
+              <h3 className="text-base font-semibold group-hover:text-teal-700 dark:group-hover:text-teal-300">{destination.label} <span aria-hidden="true">→</span></h3>
+              <p className="mt-1 text-sm secondary-text leading-snug">{destination.description}</p>
+            </Link>
+          ))}
         </div>
       </section>
-    </>
+      <section className="border-t border-slate-200 dark:border-slate-700 py-4 sm:py-5" aria-labelledby="publication-heading">
+        <div className="flex flex-wrap items-baseline justify-between gap-3">
+          <h2 id="publication-heading" className="text-base font-semibold">Journal publications</h2>
+          <Link href="/publications" className="text-link text-sm">View publications →</Link>
+        </div>
+        <p className="mt-1 text-sm secondary-text leading-relaxed">Research on MFA containment and accountable disclosure of sensitive data.</p>
+      </section>
+    </div>
   )
 }

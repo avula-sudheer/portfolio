@@ -17,10 +17,25 @@ body.dark {
 }
 
 .container {
-  @apply max-w-4xl mx-auto px-4;
+  @apply max-w-6xl mx-auto px-4;
 }
 
 /* Secondary text color that works in both light and dark modes */
 .secondary-text {
   @apply text-slate-700 dark:text-slate-300;
+}
+
+@layer base {
+  a, button, summary { @apply focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-4 focus-visible:outline-blue-600; }
+}
+
+@layer components {
+  .button-primary { @apply inline-flex items-center justify-center rounded-md bg-slate-900 dark:bg-slate-100 px-4 py-3 text-sm font-semibold text-white dark:text-slate-900 hover:bg-slate-700 dark:hover:bg-slate-200; }
+  .button-secondary { @apply inline-flex items-center justify-center rounded-md border border-slate-300 dark:border-slate-600 px-4 py-3 text-sm font-semibold hover:bg-slate-50 dark:hover:bg-slate-800; }
+  .text-link { @apply font-medium text-blue-700 dark:text-blue-300 underline underline-offset-4; }
+}
+
+/* Keep anchor and keyboard-focus scrolling above the fixed footer. */
+html {
+  scroll-padding-bottom: calc(var(--footer-height, 100px) + 16px);
 }

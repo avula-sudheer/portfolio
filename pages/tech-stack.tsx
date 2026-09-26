@@ -4,12 +4,12 @@ export default function TechStack() {
   return (
     <section>
       <div className="flex items-center gap-3">
-        <h2 className="text-2xl font-semibold">Tech Stack</h2>
+        <h1 className="text-3xl font-semibold">Expertise</h1>
       </div>
 
       <p className="mt-4 secondary-text">A concise overview of technologies and domains I work in.</p>
 
-      <h3 className="mt-6 text-lg font-semibold">Core Skills</h3>
+      <h2 className="mt-8 text-2xl font-semibold">Core Skills</h2>
       <div className="mt-2 grid grid-cols-1 sm:grid-cols-2 gap-4">
         <div>
           <strong>Frontend:</strong>
@@ -20,7 +20,7 @@ export default function TechStack() {
           <div className="mt-1 secondary-text">{resume.skills.backend.join(', ')}</div>
         </div>
         <div>
-          <strong>Cloud & Infra:</strong>
+          <strong>Cloud & Infrastructure:</strong>
           <div className="mt-1 secondary-text">{resume.skills.cloud.join(', ')}</div>
         </div>
         <div>
@@ -28,7 +28,7 @@ export default function TechStack() {
           <div className="mt-1 secondary-text">{resume.skills.dbms.join(', ')}</div>
         </div>
         <div>
-          <strong>Data Warehouse:</strong>
+          <strong>Data Warehouses:</strong>
           <div className="mt-1 secondary-text">{resume.skills.warehouse.join(', ')}</div>
         </div>
         <div>
@@ -36,11 +36,11 @@ export default function TechStack() {
           <div className="mt-1 secondary-text">{resume.skills.security.join(', ')}</div>
         </div>
         <div>
-          <strong>BuildOps:</strong>
+          <strong>Build Tools:</strong>
           <div className="mt-1 secondary-text">{resume.skills.devops.join(', ')}</div>
         </div>
         <div>
-          <strong>SecOps:</strong>
+          <strong>Secure Delivery:</strong>
           <div className="mt-1 secondary-text">{resume.skills.secops.join(', ')}</div>
         </div>
         <div>
@@ -53,7 +53,7 @@ export default function TechStack() {
         </div>
       </div>
 
-      <h3 className="mt-6 text-lg font-semibold">Certifications</h3>
+      <h2 className="mt-8 text-2xl font-semibold">Certifications</h2>
       <ul className="mt-2 list-disc list-inside secondary-text">
         {resume.certifications.map((cert) => (
           <li key={cert.name}>
@@ -62,9 +62,9 @@ export default function TechStack() {
                 href={cert.credly}
                 target="_blank"
                 rel="noopener noreferrer"
-                className="text-blue-600 dark:text-blue-400 hover:underline hover:text-blue-700 dark:hover:text-blue-300 transition-colors font-medium"
+                className="text-link"
               >
-                {cert.name}
+                {cert.name} <span aria-hidden="true">↗</span><span className="sr-only"> (opens in a new tab)</span>
               </a>
             ) : (
               cert.name

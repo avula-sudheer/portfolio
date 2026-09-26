@@ -1,16 +1,15 @@
-import resume from '../data/resume'
 import projects from '../data/projects'
 import ProjectCard from '../components/ProjectCard'
 
 export default function Projects() {
   return (
     <section>
-      <h2 className="text-2xl font-semibold">Professional Projects</h2>
-      <p className="mt-4 secondary-text">Here's a collection of projects I've worked on. Click on each one to explore the details, including my responsibilities and the tech stack used.</p>
+      <h1 className="text-3xl font-semibold">Projects</h1>
+      <p className="mt-4 max-w-4xl secondary-text">Enterprise data security, cloud integrations, platform modernization, and earlier application development work. <span className="whitespace-nowrap">Each project describes</span> my role, responsibilities, and technologies.</p>
 
-      <div className="mt-6 grid gap-4 grid-cols-1 sm:grid-cols-2">
+      <div className="mt-6 grid gap-4 grid-cols-1 sm:grid-cols-2 xl:grid-cols-3">
         {projects.map((p) => (
-          <ProjectCard key={p.slug} project={p} />
+          <ProjectCard key={p.slug} project={p} headingLevel="h2" />
         ))}
       </div>
     </section>

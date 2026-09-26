@@ -4,9 +4,9 @@ import { MDXRemote } from 'next-mdx-remote'
 
 export default function Post({ mdxSource, frontMatter }: any) {
   return (
-    <article>
-      <h1 className="text-2xl font-bold">{frontMatter.title}</h1>
-      <div className="prose mt-4 dark:prose-invert">
+    <article className="max-w-3xl mx-auto">
+      <h1 className="text-3xl sm:text-4xl font-semibold tracking-tight">{frontMatter.title}</h1>
+      <div className="prose prose-slate mt-8 dark:prose-invert">
         <MDXRemote {...mdxSource} />
       </div>
     </article>

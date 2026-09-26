@@ -1,33 +1,20 @@
-import { motion } from 'framer-motion'
 import Link from 'next/link'
-import Image from 'next/image'
+import type { projects } from '../data/projects'
 
-type P = {
-  project: {
-    title: string
-    description: string
-    slug: string
-    tech?: string[]
-    image?: string
-    link?: string
-  }
-}
+type Props = { project: (typeof projects)[number]; headingLevel?: 'h2' | 'h3' }
 
-export default function ProjectCard({ project }: P) {
+export default function ProjectCard({ project, headingLevel: Heading = 'h3' }: Props) {
   return (
-    <motion.article whileHover={{ y: -4 }} className="border rounded p-4 flex flex-col">
-      {project.image && (
-        <div className="w-full h-36 relative mb-3 rounded overflow-hidden" aria-hidden="true">
-          <Image src={project.image} alt={project.title} fill sizes="(max-width: 768px) 100vw, 33vw" className="object-cover" priority={false} />
-        </div>
-      )}
-      <h3 className="font-semibold text-lg">{project.title}</h3>
-      <p className="mt-2 secondary-text flex-1">{project.description}</p>
-      <div className="mt-3 flex items-center justify-between">
-        <div className="flex gap-2 items-center">
-          <Link href={`/projects/${project.slug}`} className="text-sm px-2 py-1 border rounded border-slate-200 dark:border-slate-700 text-slate-700 dark:text-slate-200 inline-flex items-center">More details...</Link>
-        </div>
-      </div>
-    </motion.article>
+    <article className="flex flex-col rounded-lg border border-slate-200 dark:border-slate-700 p-5">
+      <p className="text-sm secondary-text">{project.role}</p>
+      <Heading className="mt-3 text-xl font-semibold leading-snug">
+        <Link href={`/projects/${project.slug}`} className="hover:underline underline-offset-4">{project.title}</Link>
+      </Heading>
+      <p className="mt-2 text-sm secondary-text leading-relaxed flex-1">{project.contribution}</p>
+      <ul aria-label="Selected technologies" className="mt-4 flex flex-wrap gap-x-3 gap-y-1 text-xs secondary-text">
+        {project.tech.slice(0, 4).map((tech) => <li key={tech}>{tech}</li>)}
+      </ul>
+      <Link href={`/projects/${project.slug}`} className="text-link text-sm mt-5 self-start">View project<span className="sr-only">: {project.title}</span> →</Link>
+    </article>
   )
 }

@@ -35,7 +35,7 @@ export default function ThemeToggle() {
   if (!mounted) return null
 
   return (
-    <button onClick={toggle} aria-label="Toggle theme" className="px-2 py-1 border rounded">
+    <button onClick={toggle} aria-label={`Switch to ${theme === 'dark' ? 'light' : 'dark'} mode`} className="px-2 py-1 border rounded">
       {theme === 'dark' ? 'Light' : 'Dark'}
     </button>
   )
