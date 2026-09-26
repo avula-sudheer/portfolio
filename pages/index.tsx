@@ -2,9 +2,9 @@ import Link from 'next/link'
 import Hero from '../components/Hero'
 
 const destinations = [
-  { href: '/projects', label: 'Projects', description: 'Selected engineering work and responsibilities.' },
+  { href: '/projects', label: 'Project', description: 'Selected engineering work and responsibilities.' },
   { href: '/tech-stack', label: 'Expertise', description: 'Technologies, security domains, and certifications.' },
-  { href: '/background', label: 'Personal Story', description: 'Personal background, values, and leadership approach.' },
+  { href: '/background', label: 'Story', description: 'Personal background, values, and leadership approach.' },
 ]
 
 export default function Home() {

@@ -1,7 +1,7 @@
 export default function Background() {
   return (
     <article className="max-w-3xl">
-      <h1 className="text-3xl sm:text-4xl font-semibold tracking-tight">Personal background</h1>
+      <h1 className="text-3xl sm:text-4xl font-semibold tracking-tight">Story</h1>
       <p className="mt-4 text-lg secondary-text leading-relaxed">The experiences behind how I approach engineering, collaboration, and leadership.</p>
 
       <section className="mt-10 space-y-8">

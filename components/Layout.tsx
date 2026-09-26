@@ -10,7 +10,7 @@ type Props = { children: React.ReactNode }
 export default function Layout({ children }: Props) {
   const { asPath } = useRouter()
   const path = asPath.split(/[?#]/)[0]
-  const labels: Record<string, string> = { '/about': 'About', '/background': 'Background', '/projects': 'Projects', '/tech-stack': 'Expertise', '/resume': 'Resume', '/contact': 'Contact', '/blog': 'Blog' }
+  const labels: Record<string, string> = { '/about': 'About', '/background': 'Story', '/projects': 'Project', '/tech-stack': 'Expertise', '/resume': 'Resume', '/contact': 'Contact', '/blog': 'Blog' }
   const title = `${labels[path] ? `${labels[path]} | ` : ''}${resume.name} — ${resume.headline}`
   return (
     <>

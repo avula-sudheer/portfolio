@@ -3,7 +3,7 @@ import { publications } from '../data/publications'
 export default function Publications() {
   return (
     <section className="max-w-6xl mx-auto">
-      <h1 className="text-3xl sm:text-4xl font-semibold tracking-tight">Journal Publications</h1>
+      <h1 className="text-3xl sm:text-4xl font-semibold tracking-tight">Publications</h1>
       <p className="mt-4 secondary-text leading-relaxed">Selected journal authorship contributions on access containment and sensitive data disclosure.</p>
       <div className="mt-8 border-t border-slate-200 dark:border-slate-700">
         {publications.map((paper) => (
