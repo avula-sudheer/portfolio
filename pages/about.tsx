@@ -18,16 +18,6 @@ export default function About() {
         <p className="mt-4 secondary-text leading-relaxed">I lead through architecture reviews, performance tuning, threat modeling, and mentoring. I value clear technical direction, curiosity, and giving engineers room to ask questions, explore solutions, and build confidence.</p>
       </section>
 
-      <section className="mt-10 border-t border-slate-200 dark:border-slate-700 pt-8" aria-labelledby="values-heading">
-        <h2 id="values-heading" className="text-2xl font-semibold">Personal values</h2>
-        <p className="mt-4 secondary-text leading-relaxed">My interest in engineering began with a love of math and problem solving. As a parent and mentor, patience, empathy, and responsibility shape how I collaborate and support other people’s growth.</p>
-      </section>
-
-      <section className="mt-10 border-t border-slate-200 dark:border-slate-700 pt-8" aria-labelledby="personal-heading">
-        <h2 id="personal-heading" className="text-2xl font-semibold">A little more about me</h2>
-        <p className="mt-4 secondary-text leading-relaxed">Growing up as the eldest child taught me responsibility, resilience, and independence. Early setbacks—including losing my baggage and passport on the day of my GRE exam and being denied entry to a technical entrance exam—strengthened my accountability and self-motivation.</p>
-        <p className="mt-4 secondary-text leading-relaxed">Those experiences, along with my curiosity about math, logic, and the real-world impact of engineering, led me toward computer science. Today, the roles I hold as a parent, mentor, and engineer continue to shape how I work with patience, empathy, and purpose.</p>
-      </section>
     </section>
   )
 }

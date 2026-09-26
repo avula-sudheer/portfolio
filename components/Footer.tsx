@@ -23,7 +23,7 @@ export default function Footer() {
   return (
     <footer ref={footerRef} style={{ paddingBottom: 'env(safe-area-inset-bottom)' }} className="fixed bottom-0 inset-x-0 z-40 bg-white dark:bg-slate-900 border-t border-slate-200 dark:border-slate-800 shadow-inner">
       <div className="container py-3 text-sm flex flex-col gap-4 sm:flex-row items-center justify-between">
-        <div>© {new Date().getFullYear()} Sudheer Avula</div>
+        <div className="text-center sm:text-left">© {new Date().getFullYear()} Sudheer Avula <span className="mx-1 text-slate-400">·</span> Made with <span aria-label="love">♥</span> from HomeLabs</div>
         <div className="flex items-center gap-4">
           {resume.github && (
             <a href={resume.github} target="_blank" rel="noopener noreferrer" aria-label="GitHub">
